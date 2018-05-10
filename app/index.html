@@ -1,10 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My App</title>
+    <title>PCCW Solutions Chatbot</title>
+    <script>
+      $(function() {
+    var $menu = $('#menu'), 
+        $target = $('#target');
+    
+    $menu.on('click', '> a', function(event) {
+        var $this = $(this);
+        event.preventDefault();
+        $target.load('/echo/html/', {html: $this.attr('href')}); // JSFiddle Ajax simulation.         
+        // $target.load($this.attr('href')); // Actual code
+    });
+});
+    </script>
+    <style type="text/css">
+      iframe#myIframe0 {
+          border:1px solid #ccc;
+          width:1050px; height:850px;
+          }
+      </style>
   </head>
   <body>
-    <div id="root"></div>
-    <script src="bundle.js"></script>
+    
+    
+    <div style="width: 350px; float: left;" >
+        <div id="root"></div>
+        <script src="bundle.js"></script>
+    </div>
+    <div style="margin-left: 370px; ">
+        <iframe src="about:blank" name = "myIframe0" id="myIframe0" style="display: block"></iframe>
+    </div>
+
+
+
   </body>
 </html>

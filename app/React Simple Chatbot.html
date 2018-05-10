@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0069)https://lucasbassetti.com.br/react-simple-chatbot/#/docs/installation -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>React Simple Chatbot</title>
+    <meta name="description" content="A simple chatbot/conversational-ui react component">
+
+    <!-- Google Authorship Markup -->
+    <link rel="author" href="https://plus.google.com/u/0/+LucasBassettiRF?rel=author">
+
+    <!-- Social: Facebook / Open Graph -->
+    <meta property="og:url" content="http://lucasbassetti.com.br/react-simple-chatbot/">
+    <meta property="og:title" content="React Simple Chatbot">
+    <meta property="og:image" content="./favicon.icon">
+    <meta property="og:description" content="A simple chatbot/conversational-ui react component">
+    <meta property="og:site_name" content="React Simple Chatbot">
+
+    <!-- Social: Google+ / Schema.org  -->
+    <meta itemprop="name" content="React Simple Chatbot">
+    <meta itemprop="description" content="A simple chatbot/conversational-ui react component">
+    <meta itemprop="image" content="./favicon.icon">
+
+    <!--  Favicon -->
+    <link rel="shortcut icon" href="https://lucasbassetti.com.br/react-simple-chatbot/favicon.ico" type="image/x-icon">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="./React Simple Chatbot_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./React Simple Chatbot_files/css">
+
+    <script async="" src="./React Simple Chatbot_files/analytics.js.download"></script><script id="twitter-wjs" src="./React Simple Chatbot_files/widgets.js.download"></script><script>
+      window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+  <style type="text/css" data-styled-components="yGVCZ Lmuha cbuIds kdZMGe bxslzG efROPc vmYlS hLGSaN fhAWVE hseFPs iTWArB dUwKYp byHcWR kCSgO kZiwDc jgMjlR edRFCv gkhNlr hvWyFD fMcZCH biAEAb gfeMQm glfuN dYUxQs kMqZix dOJFEw lbcrfw" data-styled-components-is-local="true">
+/* sc-component-id: sc-keyframes-yGVCZ */
+@-webkit-keyframes yGVCZ{0%{opacity:.2;}20%{opacity:1;}100%{opacity:.2;}}@keyframes yGVCZ{0%{opacity:.2;}20%{opacity:1;}100%{opacity:.2;}}
+/* sc-component-id: sc-keyframes-Lmuha */
+@-webkit-keyframes Lmuha{100%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}@keyframes Lmuha{100%{-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);}}
+/* sc-component-id: sc-keyframes-cbuIds */
+@-webkit-keyframes cbuIds{25%{-webkit-transform:rotate(-1deg);-ms-transform:rotate(-1deg);transform:rotate(-1deg);}100%{-webkit-transform:rotate(1deg);-ms-transform:rotate(1deg);transform:rotate(1deg);}}@keyframes cbuIds{25%{-webkit-transform:rotate(-1deg);-ms-transform:rotate(-1deg);transform:rotate(-1deg);}100%{-webkit-transform:rotate(1deg);-ms-transform:rotate(1deg);transform:rotate(1deg);}}
+/* sc-component-id: sc-bdVaJa */
+
+.hseFPs{-webkit-animation:yGVCZ 1.4s infinite both;animation:yGVCZ 1.4s infinite both;-webkit-animation-delay:0s;animation-delay:0s;}
+.iTWArB{-webkit-animation:yGVCZ 1.4s infinite both;animation:yGVCZ 1.4s infinite both;-webkit-animation-delay:.2s;animation-delay:.2s;}
+.dUwKYp{-webkit-animation:yGVCZ 1.4s infinite both;animation:yGVCZ 1.4s infinite both;-webkit-animation-delay:.4s;animation-delay:.4s;}
+/* sc-component-id: sc-htpNat */
+
+.hvWyFD{-webkit-animation:Lmuha .3s ease forwards;animation:Lmuha .3s ease forwards;cursor:pointer;display:inline-block;margin:2px;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);}
+/* sc-component-id: sc-bxivhb */
+
+.fMcZCH{background:#6E48AA;border-radius:22px;box-shadow:0 1px 2px 0 rgba(0,0,0,0.15);color:#fff;display:inline-block;font-size:14px;padding:12px;}.fMcZCH:hover{opacity:.7;}
+/* sc-component-id: sc-ifAKCX */
+
+.gkhNlr{margin:2px 0 12px 0;padding:0 6px;}
+/* sc-component-id: sc-EHOje */
+
+
+/* sc-component-id: sc-bZQynM */
+
+.fhAWVE{-webkit-animation:Lmuha .3s ease forwards;animation:Lmuha .3s ease forwards;background:#6E48AA;border-radius:18px 18px 18px 0;box-shadow:0 1px 2px 0 rgba(0,0,0,0.15);color:#fff;display:inline-block;font-size:14px;max-width:50%;margin:0 0 10px 0;overflow:hidden;position:relative;padding:12px;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom left;-ms-transform-origin:bottom left;transform-origin:bottom left;}
+.jgMjlR{-webkit-animation:Lmuha .3s ease forwards;animation:Lmuha .3s ease forwards;background:#6E48AA;border-radius:0 18px 18px 18px;box-shadow:0 1px 2px 0 rgba(0,0,0,0.15);color:#fff;display:inline-block;font-size:14px;max-width:50%;margin:-8px 0 10px 46px;overflow:hidden;position:relative;padding:12px;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:top left;-ms-transform-origin:top left;transform-origin:top left;}
+/* sc-component-id: sc-gzVnrw */
+
+.hLGSaN{-webkit-animation:Lmuha .3s ease forwards;animation:Lmuha .3s ease forwards;border-radius:50% 50% 0 50%;box-shadow:rgba(0,0,0,0.15) 0px 1px 2px 0px;height:40px;min-width:40px;padding:3px;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom right;-ms-transform-origin:bottom right;transform-origin:bottom right;width:40;}
+/* sc-component-id: sc-htoDjs */
+
+.vmYlS{display:inline-block;-webkit-order:0;-ms-flex-order:0;order:0;padding:6px;}
+/* sc-component-id: sc-dnqmqq */
+
+.efROPc{-webkit-align-items:flex-end;-webkit-box-align:flex-end;-ms-flex-align:flex-end;align-items:flex-end;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;}
+/* sc-component-id: sc-iwsKbI */
+
+.kdZMGe{background:#f5f8fb;border-radius:10px;box-shadow:0 12px 24px 0 rgba(0,0,0,0.15);font-family:monospace;overflow:hidden;position:relative;bottom:initial;right:initial;width:350px;z-index:999;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transform-origin:bottom right;-ms-transform-origin:bottom right;transform-origin:bottom right;-webkit-transition:-webkit-transform .3s ease;-webkit-transition:transform .3s ease;transition:transform .3s ease;}@media screen and (max-width:568px){.kdZMGe{bottom:0;height:100%;right:0;width:100%;}}
+.gfeMQm{background:#f5f8fb;border-radius:10px;box-shadow:0 12px 24px 0 rgba(0,0,0,0.15);font-family:monospace;overflow:hidden;position:fixed;bottom:32px;right:32px;width:350px;z-index:999;-webkit-transform:scale(0);-ms-transform:scale(0);transform:scale(0);-webkit-transform-origin:bottom right;-ms-transform-origin:bottom right;transform-origin:bottom right;-webkit-transition:-webkit-transform .3s ease;-webkit-transition:transform .3s ease;transition:transform .3s ease;}@media screen and (max-width:568px){.gfeMQm{border-radius:0;bottom:0;height:100%;right:0;width:100%;}}
+/* sc-component-id: sc-gZMcBi */
+
+.bxslzG{height:400px;overflow-y:scroll;margin-top:2px;padding-top:6px;}
+.dOJFEw{height:400px;overflow-y:scroll;margin-top:2px;padding-top:6px;}@media screen and (max-width:568px){.dOJFEw{height:calc(100% - 112px);}}
+/* sc-component-id: sc-gqjmRU */
+
+.glfuN{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;background:#6e48aa;color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;fill:#fff;height:56px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:0 10px;}
+/* sc-component-id: sc-VigVT */
+
+.dYUxQs{margin:0;font-size:16px;}
+/* sc-component-id: sc-jTzLTM */
+
+.kMqZix{cursor:pointer;}
+/* sc-component-id: sc-fjdhpX */
+
+.biAEAb{-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;background:#6e48aa;bottom:32px;border-radius:100%;box-shadow:0 12px 24px 0 rgba(0,0,0,0.15);display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;fill:#fff;height:56px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:fixed;right:32px;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:-webkit-transform .3s ease;-webkit-transition:transform .3s ease;transition:transform .3s ease;width:56px;z-index:999;}
+/* sc-component-id: sc-jzJRlG */
+
+.byHcWR{position:relative;}
+/* sc-component-id: sc-cSHVUG */
+
+.kCSgO{border:0;border-radius:0;border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top:1px solid #eee;box-shadow:none;box-sizing:border-box;font-size:14px;opacity:.5;outline:none;padding:16px 52px 16px 10px;width:100%;-webkit-appearance:none;}.kCSgO:disabled{background:#fff;}@media screen and (max-width:568px){.kCSgO{border-bottom-left-radius:10px;border-bottom-right-radius:10px;}}
+.lbcrfw{border:0;border-radius:0;border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top:1px solid #eee;box-shadow:none;box-sizing:border-box;font-size:14px;opacity:.5;outline:none;padding:16px 52px 16px 10px;width:100%;-webkit-appearance:none;}.lbcrfw:disabled{background:#fff;}@media screen and (max-width:568px){.lbcrfw{border-bottom-left-radius:0;border-bottom-right-radius:0;}}
+/* sc-component-id: sc-kAzzGY */
+
+.kZiwDc{background-color:transparent;border:0;border-bottom-right-radius:10px;box-shadow:none;cursor:default;fill:#4a4a4a;opacity:.5;outline:none;padding:14px 16px 12px 16px;position:absolute;right:0;top:0;}.kZiwDc:before{content:'';position:absolute;width:23px;height:23px;border-radius:50%;}.kZiwDc:not(:disabled):hover{opacity:0.7;}</style><style type="text/css">.home{background:#9d50bb;background:linear-gradient(90deg,#6e48aa,#9d50bb);color:#fff;min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;display:-webkit-flex;-ms-flex-pack:distribute;justify-content:space-around;-webkit-justify-content:space-around;-webkit-align-items:space-around;padding:0 12px}.home,.home .column{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.home .column{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.home .title{font-size:2.4rem;text-align:center}.home .description{font-size:1.4rem;margin:0;text-align:center}.home .social-buttons{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-top:24px}.home .fb-share-button{margin-right:12px}.home .buttons{margin:24px 0 24px 32px;text-align:center}.home .button{display:inline-block;padding:6px}.home .docs-button{border:2px solid #fff;border-radius:30px;color:#fff;padding:12px 32px;transition:all .3s linear}.home .docs-button:hover{background:#fff;color:#000;opacity:1}.home .docs-button i{padding-right:12px}@media screen and (max-width:765px){.home{-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}.column{margin:50px 0}}</style><style type="text/css">.docs-component-1 .blue-td{color:#4682b4}.docs-component-1 .red-td{color:#cd5c5c}.docs-component-1 table td:nth-child(3) code{padding:0!important}</style><style type="text/css">.docs-component-3 .blue-td{color:#4682b4}.docs-component-3 .red-td{color:#cd5c5c}</style><style type="text/css">.docs-component-2 .blue-td{color:#4682b4}.docs-component-2 .red-td{color:#cd5c5c;width:120px}</style><style type="text/css">.sidebar-container{height:0}.sidebar-toggle{background:#fff;cursor:pointer;font-size:24px;padding:16px}.sidebar{height:100%;position:fixed;width:250px;left:0;top:0;z-index:99999;background-color:#f6f8fa;border-right:1px solid #e2e4e6;overflow-y:scroll}.sidebar::-webkit-scrollbar{display:none}.sidebar .sidebar-header{height:56px}.sidebar .sidebar-header .logo{display:inline-block;padding:12px 16px 0;color:#4a4a4a}.sidebar .sidebar-header .npm-release{display:block;padding:0 0 16px 16px}.sidebar .sidebar-close-button{display:none;cursor:pointer;float:right;font-size:20px;padding:16px}.sidebar-links div>a{display:block;text-decoration:none;margin:0 auto 5px;padding:10px 0 10px 5px;text-align:left;color:#4a4a4a;font-size:14px;font-weight:700;line-height:2}.sidebar-links div.selected>a{background-color:#e9e9ea;color:#4a4a4a;line-height:2.3;margin:0}.sidebar-links div>a i.fa{position:relative;font-size:20px;top:3px;width:40px;text-align:center}.sidebar-links div ul.sub-links{max-height:0;overflow:hidden;list-style:none;padding:0 0 0 30px;color:#4a4a4a;font-size:14px;font-weight:700;line-height:24px;margin:0;transition:.4s}.sidebar-links div.selected ul.sub-links{max-height:300px;padding:12px 0 12px 30px}.sidebar-links div .sub-links a{text-decoration:none;color:#4a4a4a;display:block;text-align:left}.sidebar-links div .sub-links a.selected-link{color:#944eb8}.sidebar-links div.link-blue>a{border-color:#487db2}.sidebar-links div.link-blue>a i.fa{color:#487db2}.sidebar-links div.link-red>a{border-color:#da4545}.sidebar-links div.link-red>a i.fa{color:#da4545}.sidebar-links div.link-yellow>a{border-color:#d0d237}.sidebar-links div.link-yellow>a i.fa{color:#d0d237}.sidebar-links div.link-green>a{border-color:#86be2e}.sidebar-links div.link-green>a i.fa{color:#86be2e}@media screen and (max-width:765px){.sidebar-container{height:56px}.sidebar{width:100%;-webkit-transform:translateX(-100%);transform:translateX(-100%);transition:-webkit-transform .3s ease;transition:transform .3s ease;transition:transform .3s ease,-webkit-transform .3s ease}.sidebar.opened{-webkit-transform:translateX(0);transform:translateX(0);z-index:9999}.sidebar .sidebar-close-button{display:block}}</style><style type="text/css">.docs .social-buttons{position:absolute;top:6px;right:40px;padding:16px;display:-webkit-box;display:-ms-flexbox;display:flex;display:-webkit-flex}.docs .fb-share-button{margin-right:6px}main{margin-left:250px;padding:24px}@media screen and (max-width:765px){main{margin:0;padding:24px}}</style><style type="text/css">.hljs{display:block;overflow-x:auto;padding:.5em;color:#333;background:#f8f8f8}.hljs-comment,.hljs-quote{color:#998;font-style:italic}.hljs-keyword,.hljs-selector-tag,.hljs-subst{color:#333;font-weight:700}.hljs-literal,.hljs-number,.hljs-tag .hljs-attr,.hljs-template-variable,.hljs-variable{color:teal}.hljs-doctag,.hljs-string{color:#d14}.hljs-section,.hljs-selector-id,.hljs-title{color:#900;font-weight:700}.hljs-subst{font-weight:400}.hljs-class .hljs-title,.hljs-type{color:#458;font-weight:700}.hljs-attribute,.hljs-name,.hljs-tag{color:navy;font-weight:400}.hljs-link,.hljs-regexp{color:#009926}.hljs-bullet,.hljs-symbol{color:#990073}.hljs-built_in,.hljs-builtin-name{color:#0086b3}.hljs-meta{color:#999;font-weight:700}.hljs-deletion{background:#fdd}.hljs-addition{background:#dfd}.hljs-emphasis{font-style:italic}.hljs-strong{font-weight:700}</style><style type="text/css">body{padding:0;font-family:Quicksand,sans-serif;color:#4a4a4a}body,h1,h2,h3,h4,h5{margin:0}a{text-decoration:none;color:#944eb8;cursor:pointer}a:hover{opacity:.7}ul{list-style-type:none;padding:6px 12px}li{padding:6px 0}table,tbody,td,th,thead,tr{width:auto;height:auto;margin:0;padding:0;border:none;border-collapse:inherit;border-spacing:0;border-color:inherit;vertical-align:inherit;text-align:left;-webkit-border-horizontal-spacing:0;-webkit-border-vertical-spacing:0}table{width:100%;margin:12px 0}th{border-top:1px solid #ddd;background:#f5f5f5}td,th{padding:12px;border-bottom:1px solid #ddd}pre{white-space:pre-wrap;overflow-y:hidden;overflow-x:scroll;background:#f5f5f5;border:1px solid #ddd;border-radius:5px}pre::-webkit-scrollbar{display:none}code{padding:12px!important;line-height:22px;min-width:500px;font-size:13px!important}object{display:none}@media screen and (max-width:568px){code{font-size:8px!important}}</style><style type="text/css">.responsive-table{overflow-x:scroll}.responsive-table::-webkit-scrollbar{display:none}.responsive-table table{min-width:765px}</style><script type="text/javascript" charset="utf-8" async="" src="./React Simple Chatbot_files/button.7db838345f9545c91ea4497f64abb814.js.download"></script><link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css"></head>
+  <body>
+    <div id="root">
+	<div class="docs">
+		<div class="sidebar-container">
+			<i class="sidebar-toggle fa fa-bars"></i>
+			<div class="sidebar ">
+				<div class="sidebar-header">
+					<a class="logo">React Simple Chatbot</a>
+					<i class="sidebar-close-button fa fa-close"></i>
+					<a href="https://badge.fury.io/js/react-simple-chatbot" class="npm-release">
+						<img src="./React Simple Chatbot_files/68747470733a2f2f62616467652e667572792e696f2f6a732f72656163742d73696d706c652d63686174626f742e737667" alt="npm version" data-canonical-src="https://badge.fury.io/js/react-simple-chatbot.svg" style="max-width: 100%;">
+						</a>
+					</div>
+					<div class="sidebar-links">
+						<div class="selected">
+							<a href="https://lucasbassetti.com.br/react-simple-chatbot/#">
+								<i class="fa fa-arrow-right"></i> Intro
+							</a>
+							<ul class="sub-links">
+								<li>
+									<a data-href="/docs/installation" class="selected-link">Installation</a>
+								</li>
+								<li>
+									<a data-href="/docs/hello-world">Hello World</a>
+								</li>
+								<li>
+									<a data-href="/docs/themes">Theming</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<a href="https://lucasbassetti.com.br/react-simple-chatbot/#">
+								<i class="fa fa-code"></i> Examples
+							</a>
+							<ul class="sub-links">
+								<li>
+									<a data-href="/docs/previous-value">Previous Value</a>
+								</li>
+								<li>
+									<a data-href="/docs/speech-recognition">Speech Recognition</a>
+								</li>
+								<li>
+									<a data-href="/docs/options">Options</a>
+								</li>
+								<li>
+									<a data-href="/docs/validator">Validator</a>
+								</li>
+								<li>
+									<a data-href="/docs/custom">Custom Component</a>
+								</li>
+								<li>
+									<a data-href="/docs/wikipedia">Wikipédia Search</a>
+								</li>
+								<li>
+									<a data-href="/docs/form">Simple Form</a>
+								</li>
+								<li>
+									<a data-href="/docs/end-callback">End Callback</a>
+								</li>
+								<li>
+									<a data-href="/docs/bmi">BMI</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<a href="https://lucasbassetti.com.br/react-simple-chatbot/#">
+								<i class="fa fa-cogs"></i> API Reference
+							</a>
+							<ul class="sub-links">
+								<li>
+									<a data-href="/docs/chatbot">ChatBot</a>
+								</li>
+								<li>
+									<a data-href="/docs/steps">Steps (JSON)</a>
+								</li>
+								<li>
+									<a data-href="/docs/custom-component">Custom Component</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<a href="https://lucasbassetti.com.br/react-simple-chatbot/#">
+								<i class="fa fa-th"></i> Others
+							</a>
+							<ul class="sub-links">
+								<li>
+									<a data-href="/docs/contribute">How to Contribute</a>
+								</li>
+								<li>
+									<a data-href="/docs/donate">Donate</a>
+								</li>
+								<li>
+									<a data-href="/docs/react-native">React Native</a>
+								</li>
+								<li>
+									<a data-href="/docs/releases">Releases</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href="https://github.com/LucasBassetti/react-simple-chatbot">
+				<svg width="28" height="28" viewBox="0 0 400 400" style="position: absolute; top: 0px; right: 0px; padding: 16px;">
+					<g>
+						<path d="M409.132,114.573c-19.608-33.596-46.205-60.194-79.798-79.8C295.736,15.166,259.057,5.365,219.271,5.365 c-39.781,0-76.472,9.804-110.063,29.408c-33.596,19.605-60.192,46.204-79.8,79.8C9.803,148.168,0,184.854,0,224.63 c0,47.78,13.94,90.745,41.827,128.906c27.884,38.164,63.906,64.572,108.063,79.227c5.14,0.954,8.945,0.283,11.419-1.996 c2.475-2.282,3.711-5.14,3.711-8.562c0-0.571-0.049-5.708-0.144-15.417c-0.098-9.709-0.144-18.179-0.144-25.406l-6.567,1.136 c-4.187,0.767-9.469,1.092-15.846,1c-6.374-0.089-12.991-0.757-19.842-1.999c-6.854-1.231-13.229-4.086-19.13-8.559 c-5.898-4.473-10.085-10.328-12.56-17.556l-2.855-6.57c-1.903-4.374-4.899-9.233-8.992-14.559 c-4.093-5.331-8.232-8.945-12.419-10.848l-1.999-1.431c-1.332-0.951-2.568-2.098-3.711-3.429c-1.142-1.331-1.997-2.663-2.568-3.997 c-0.572-1.335-0.098-2.43,1.427-3.289c1.525-0.859,4.281-1.276,8.28-1.276l5.708,0.853c3.807,0.763,8.516,3.042,14.133,6.851 c5.614,3.806,10.229,8.754,13.846,14.842c4.38,7.806,9.657,13.754,15.846,17.847c6.184,4.093,12.419,6.136,18.699,6.136 c6.28,0,11.704-0.476,16.274-1.423c4.565-0.952,8.848-2.383,12.847-4.285c1.713-12.758,6.377-22.559,13.988-29.41 c-10.848-1.14-20.601-2.857-29.264-5.14c-8.658-2.286-17.605-5.996-26.835-11.14c-9.235-5.137-16.896-11.516-22.985-19.126 c-6.09-7.614-11.088-17.61-14.987-29.979c-3.901-12.374-5.852-26.648-5.852-42.826c0-23.035,7.52-42.637,22.557-58.817 c-7.044-17.318-6.379-36.732,1.997-58.24c5.52-1.715,13.706-0.428,24.554,3.853c10.85,4.283,18.794,7.952,23.84,10.994 c5.046,3.041,9.089,5.618,12.135,7.708c17.705-4.947,35.976-7.421,54.818-7.421s37.117,2.474,54.823,7.421l10.849-6.849 c7.419-4.57,16.18-8.758,26.262-12.565c10.088-3.805,17.802-4.853,23.134-3.138c8.562,21.509,9.325,40.922,2.279,58.24 c15.036,16.18,22.559,35.787,22.559,58.817c0,16.178-1.958,30.497-5.853,42.966c-3.9,12.471-8.941,22.457-15.125,29.979 c-6.191,7.521-13.901,13.85-23.131,18.986c-9.232,5.14-18.182,8.85-26.84,11.136c-8.662,2.286-18.415,4.004-29.263,5.146 c9.894,8.562,14.842,22.077,14.842,40.539v60.237c0,3.422,1.19,6.279,3.572,8.562c2.379,2.279,6.136,2.95,11.276,1.995 c44.163-14.653,80.185-41.062,108.068-79.226c27.88-38.161,41.825-81.126,41.825-128.906 C438.536,184.851,428.728,148.168,409.132,114.573z"></path>
+					</g>
+				</svg>
+			</a>
+			<main>
+				<div>
+					<div class="header">
+						<h1 class="title">Installation</h1>
+						<p class="description"></p>
+					</div>
+					<div class="docs-installation">
+						<p>Run the following commands in your terminal</p>
+						<pre>
+							<code class="bash hljs">npm install react-simple-chatbot --save</code>
+						</pre>
+						<p>Importing</p>
+						<pre>
+							<code class="jsx hljs javascript">
+								<span class="hljs-keyword">import</span> ChatBot 
+								<span class="hljs-keyword">from</span>
+								<span class="hljs-string">'react-simple-chatbot'</span>;
+							</code>
+						</pre>
+					</div>
+				</div>
+			</main>
+			<div class="rsc tutorial">
+				<a class="rsc-float-button sc-fjdhpX biAEAb">
+					<svg height="24" viewBox="0 0 24 24" width="24"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"></path>
+						<path d="M0 0h24v24H0z" fill="none"></path>
+					</svg>
+				</a>
+			</div>
+    <script src="./React Simple Chatbot_files/buttons.js.download"></script>
+    <script src="./React Simple Chatbot_files/highlight.min.js.download"></script>
+    <script src="./React Simple Chatbot_files/bundle.js.download"></script>
+  
+
+<iframe scrolling="no" frameborder="0" allowtransparency="true" src="./React Simple Chatbot_files/widget_iframe.d383dc1d510865aceaa5e552afcf5663.html" title="Twitter settings iframe" style="display: none;"></iframe><iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./React Simple Chatbot_files/saved_resource.html"></iframe></body></html>
